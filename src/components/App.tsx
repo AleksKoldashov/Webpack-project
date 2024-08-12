@@ -1,19 +1,10 @@
 import React, {useState} from 'react';
-import imge from '../assets/img/img1.svg'
-import imf from '../assets/img/imf2.jpg'
-// import * as React from 'react'
-
-
-
-
 
 export default function App (){
-    const [git, setGit] = useState('hhh')
-    console.log(git);
-
-
+   const [state, setState]=useState(true)
+   console.log(state);
+   
     return<div>
-        <img src={imf} alt='fff'/>
-        <h1>Работате fgdfgfgfg</h1>
+        <h1>Работате</h1>
     </div>
 }

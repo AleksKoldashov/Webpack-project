@@ -24,7 +24,7 @@ module.exports = {
     mode,
     plugins,
     target,
-    entry: './src/index.jsx',
+    entry: './src/index.tsx',
     devtool: 'source-map', 
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -79,7 +79,8 @@ module.exports = {
                 presets: [
                     '@babel/preset-env',
                     '@babel/preset-typescript'
-                ],
+                      ],
+                cacheDirectory: true,
               }
             }
         },
@@ -93,6 +94,7 @@ module.exports = {
                     '@babel/preset-env',
                     '@babel/preset-react'
                 ],
+                cacheDirectory: true,
               }
             }
         },
